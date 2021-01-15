@@ -1,7 +1,8 @@
 package gameOfLife;
 import java.awt.*;
 
-public abstract class Zombie extends Creature implements Movable, Aggressor {
+public class Zombie extends Creature implements Movable, Aggressor
+{
     /******************************************
      * MEMBERS
      *****************************************/
@@ -18,7 +19,7 @@ public abstract class Zombie extends Creature implements Movable, Aggressor {
     {
         this.p = p;
         this.location = location;
-        this.health = health;
+        health = 1;
     }
 
     /******************************************
@@ -39,16 +40,30 @@ public abstract class Zombie extends Creature implements Movable, Aggressor {
     }
     /******************************************
      * MOVE
-     *****************************************/
+     ****************************************
+     * @return*/
     @Override
-    public void move()
+    public int move()
     {
         location.x++;
+        return 0;
+    }
+
+    @Override
+    Shape getShape()
+    {
+        return Shape.Square;
     }
 
     @Override
     public Color getColor()
     {
         return new Color(0, 0, 255);
+    }
+
+    @Override
+    Boolean isAlive()
+    {
+        return health > 0;
     }
 }

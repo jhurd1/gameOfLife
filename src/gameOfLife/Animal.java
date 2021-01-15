@@ -60,8 +60,9 @@ public class Animal extends Creature implements Movable, Aggressor
 
     /**
      * Move the animal in a random direction.
+     * @return
      */
-    public void move()
+    public int move()
     {
 
         // Choose a random direction each time move() is called.
@@ -81,5 +82,6 @@ public class Animal extends Creature implements Movable, Aggressor
             default:
                 break;
         }
+        return 0;
     }
 }

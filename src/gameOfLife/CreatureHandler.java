@@ -23,7 +23,8 @@ public class CreatureHandler
      * Retrieves all of the creatures that exist in the world
      * @return A list of the creatures in the world.
      */
-    public List<Creature> getCreatures() {
+    public List<Creature> getCreatures()
+    {
         return _creatures;
     }
 
@@ -32,7 +33,8 @@ public class CreatureHandler
      * @param worldCols How many columns the world grid should have.
      * @param creatures A list of creatures to start the world with.
      */
-    public CreatureHandler(int worldRows, int worldCols, List<Creature> creatures) {
+    public CreatureHandler(int worldRows, int worldCols, List<Creature> creatures)
+    {
         _rand = new Random();
         _rows = worldRows;
         _cols = worldCols;
@@ -43,7 +45,8 @@ public class CreatureHandler
      * Sets the initial positions of the creatures to random locations within the
      * world's grid.
      */
-    public void setStartingPositions() {
+    public void setStartingPositions()
+    {
 
         // Java's enhanced for loop (AKA for-each loop).
         // See: http://stackoverflow.com/a/11685345/28106
@@ -52,14 +55,16 @@ public class CreatureHandler
         }
     }
 
-    private Point getRandomLocation() {
+    private Point getRandomLocation()
+    {
         int r = _rand.nextInt(_rows);
         int c = _rand.nextInt(_cols);
 
         return new Point(r, c);
     }
 
-    private void wrapPoint(Point p) {
+    private void wrapPoint(Point p)
+    {
 
         // If we go too far left or right, wrap around
         // to the other side.
@@ -76,7 +81,8 @@ public class CreatureHandler
             p.y = _rows;
     }
 
-    private Creature getTarget(Creature source, int xOffset, int yOffset) {
+    private Creature getTarget(Creature source, int xOffset, int yOffset)
+    {
 
         // Determine where we are looking based on our current location
         // and the offset
@@ -102,7 +108,8 @@ public class CreatureHandler
         return null;
     }
 
-    private void handleMove(Creature c) {
+    private void handleMove(Creature c)
+    {
 
         Movable m = (Movable)c;
         m.move();
@@ -114,7 +121,8 @@ public class CreatureHandler
      * Updates all of the living creatures in the game by making they each get a chance to
      * act on their implemented behaviors.
      */
-    public void updateCreatures() {
+    public void updateCreatures()
+    {
 
         // Handle all our creature behaviors here. Since we don't know ahead of time
         // which creatures implement which behaviors, we can use the instanceof keyword

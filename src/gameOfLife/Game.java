@@ -39,7 +39,15 @@ public class Game {
         // Add some zombies.
         for (int i = 0; i < 10; i++)
         {
-            Zombie z;
+            Zombie z = new Zombie();
+            creatures.add(z);
+        }
+
+        // Add some wolves
+        for (int i = 0; i < 10; i++)
+        {
+            Wolf w = new Wolf();
+            creatures.add (w);
         }
 
         // Create the world

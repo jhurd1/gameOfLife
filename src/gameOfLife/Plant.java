@@ -10,7 +10,8 @@ import java.awt.Color;
  * @since   2016-12-08
  * @see Creature
  */
-public class Plant extends Creature {
+public class Plant extends Creature
+{
 
     /**
      * Creates a plant with 1 health point.

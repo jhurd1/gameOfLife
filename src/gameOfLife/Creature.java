@@ -14,7 +14,8 @@ import java.awt.Point;
  * @version 1.0
  * @since   2016-12-08
  */
-public abstract class Creature {
+public abstract class Creature
+{
 
     Point _location;
     int _health;
@@ -23,7 +24,8 @@ public abstract class Creature {
      * Gets the location of the creature in game coordinates.
      * @return The current location of the creature.
      */
-    public Point getLocation() {
+    public Point getLocation()
+    {
         return _location;
     }
 
@@ -31,7 +33,8 @@ public abstract class Creature {
      * Sets the location of the creature in game coordinates.
      * @param newValue The new location of the creature.
      */
-    public void setLocation(Point newValue) {
+    public void setLocation(Point newValue)
+    {
         _location = newValue;
     }
 
@@ -39,7 +42,8 @@ public abstract class Creature {
      * Allows the creature to take damage if something comes by to attack it.
      * @param damage The amount of damage inflicted by the attacker
      */
-    public void takeDamage(int damage) {
+    public void takeDamage(int damage)
+    {
         _health -= damage;
     }
 

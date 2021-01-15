@@ -13,6 +13,7 @@ public interface Movable
 
     /**
      * Moves the {@link Creature}.
+     * @return
      */
     public void move();
 }
