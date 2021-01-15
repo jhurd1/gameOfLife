@@ -8,7 +8,8 @@ package gameOfLife;
  * @since   2016-12-08
  * @see Creature
  */
-public interface Movable {
+public interface Movable
+{
 
     /**
      * Moves the {@link Creature}.

@@ -11,14 +11,16 @@ import java.util.Random;
  * @since   2016-12-08
  * @see Creature
  */
-public class Animal extends Creature implements Movable, Aggressor {
+public class Animal extends Creature implements Movable, Aggressor
+{
 
     Random _rand;
 
     /**
      * Creates an animal with 1 health point.
      */
-    public Animal() {
+    public Animal()
+    {
         _rand = new Random();
         _health = 1;
     }
@@ -27,15 +29,18 @@ public class Animal extends Creature implements Movable, Aggressor {
     // documentation from the superclass. We only need to add docs here if we are
     // doing something non-obvious in our overridden version.
 
-    public Boolean isAlive() {
+    public Boolean isAlive()
+    {
         return _health > 0;
     }
 
-    public Shape getShape() {
+    public Shape getShape()
+    {
         return Shape.Square;
     }
 
-    public Color getColor() {
+    public Color getColor()
+    {
         return new Color(165, 33, 135);
     }
 
@@ -43,7 +48,8 @@ public class Animal extends Creature implements Movable, Aggressor {
      * If the creature we've encountered is a plant, we'll eat it. Otherwise, we ignore it.
      * @param target The {@link Creature} we've encountered.
      */
-    public void attack(Creature target) {
+    public void attack(Creature target)
+    {
         // Animals only eat plants. Give the plant 1 damage
         // and increase our health by one.
         if(target instanceof Plant) {
@@ -55,7 +61,8 @@ public class Animal extends Creature implements Movable, Aggressor {
     /**
      * Move the animal in a random direction.
      */
-    public void move() {
+    public void move()
+    {
 
         // Choose a random direction each time move() is called.
         switch(_rand.nextInt(4)) {
