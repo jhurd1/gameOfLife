@@ -16,8 +16,6 @@ public class Zombie extends Creature implements Movable, Aggressor
      *****************************************/
     public Zombie()
     {
-        this.p = p;
-        this.location = location;
         health = 1;
     }
 
@@ -27,21 +25,11 @@ public class Zombie extends Creature implements Movable, Aggressor
     @Override
     public void attack(Creature target)
     {
-        if (target instanceof Animal)
+        if (target != null && !(target instanceof Plant))
         {
             target.takeDamage(10);
         }
     }
-    /******************************************
-     * MOVE
-     ****************************************
-     * @return*/
- /*   @Override
-    public int move()
-    {
-        location.x++;
-        return 0;
-    }*/
 
     @Override
     Shape getShape()
@@ -62,7 +50,8 @@ public class Zombie extends Creature implements Movable, Aggressor
     }
 
     @Override
-    public void move() {
-
+    public void move()
+    {
+        location.x++;
     }
 }

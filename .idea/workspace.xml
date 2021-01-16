@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b10753-7fd2-494c-8cc6-f38aa141b963" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Aggressor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Aware.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Creature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/CreatureHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Direction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Movable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Plant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Wolf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/World.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Zombie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zombie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,5 +58,17 @@
       <updated>1610758184386</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Point.java</url>
+          <line>47</line>
+          <properties field="x" class="java.awt.Point" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

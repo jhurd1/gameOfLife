@@ -15,8 +15,8 @@ import java.awt.Point;
 public abstract class Creature
 {
 
-    Point _location;
-    int _health;
+    Point location;
+    int health;
 
     /**
      * Gets the location of the creature in game coordinates.
@@ -24,7 +24,7 @@ public abstract class Creature
      */
     public Point getLocation()
     {
-        return _location;
+        return location;
     }
 
     /**
@@ -33,7 +33,7 @@ public abstract class Creature
      */
     public void setLocation(Point newValue)
     {
-        _location = newValue;
+        location = newValue;
     }
 
     /**
@@ -42,7 +42,7 @@ public abstract class Creature
      */
     public void takeDamage(int damage)
     {
-        _health -= damage;
+        health -= damage;
     }
 
     // Since the following methods are marked as abstract, subclasses

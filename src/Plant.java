@@ -15,7 +15,7 @@ public class Plant extends Creature
      * Creates a plant with 1 health point.
      */
     public Plant() {
-        _health = 1;
+        health = 1;
     }
 
     // No javadocs are necessary for these methods because they will inherit the
@@ -31,6 +31,6 @@ public class Plant extends Creature
     }
 
     public Boolean isAlive() {
-        return _health > 0;
+        return health > 0;
     }
 }

@@ -19,9 +19,9 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor
      *****************************************/
     public Wolf()
     {
-        this.p = p;
+        /*this.p = p;
         this.location = location;
-        this.health = health;
+        this.health = health;*/
         r = new Random();
         health = 1;
         preferredDirection = getRandomDirection();
@@ -61,31 +61,30 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor
     @Override
     public void move()
     {
-        if (c instanceof Animal)
+        /*if (c instanceof Animal)
         {
-            location = c.getLocation();
+            //senseNeighbors(c.getLocation());
         } else
-            {
+            {*/
             switch (preferredDirection)
             {
                 case Right:
-                    _location.x++;
+                    location.x++;
                     break;
                 case Left:
-                    _location.x--;
+                    location.x--;
                     break;
                 case Down:
-                    _location.y--;
+                    location.y--;
                     break;
                 case Up:
-                    _location.y++;
+                    location.y++;
                     break;
                 default:
                     location.y++;
                     break;
             }
         }
-    }
 
     @Override
     Shape getShape()

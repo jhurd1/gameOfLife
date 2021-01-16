@@ -20,7 +20,7 @@ public class Animal extends Creature implements Movable, Aggressor
     public Animal()
     {
         _rand = new Random();
-        _health = 1;
+        health = 1;
     }
 
     // No javadocs are necessary for these methods because they will inherit the
@@ -29,7 +29,7 @@ public class Animal extends Creature implements Movable, Aggressor
 
     public Boolean isAlive()
     {
-        return _health > 0;
+        return health > 0;
     }
 
     public Shape getShape()
@@ -52,7 +52,7 @@ public class Animal extends Creature implements Movable, Aggressor
         // and increase our health by one.
         if(target instanceof Plant) {
             target.takeDamage(1);
-            _health++;
+            health++;
         }
     }
 
@@ -65,16 +65,16 @@ public class Animal extends Creature implements Movable, Aggressor
         // Choose a random direction each time move() is called.
         switch(_rand.nextInt(4)) {
             case 0:
-                _location.x++;
+                location.x++;
                 break;
             case 1:
-                _location.x--;
+                location.x--;
                 break;
             case 2:
-                _location.y++;
+                location.y++;
                 break;
             case 3:
-                _location.y--;
+                location.y--;
                 break;
             default:
                 break;
