@@ -1,5 +1,3 @@
-package gameOfLife;
-
 import java.util.Random;
 import java.awt.Point;
 import java.util.List;

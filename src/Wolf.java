@@ -1,5 +1,3 @@
-package gameOfLife;
-
 import java.awt.*;
 import java.util.Random;
 
@@ -108,29 +106,42 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor
     }
 
     @Override
-    public void senseNeighbors(Creature above, Creature below, Creature left, Creature right) {
-        if (preferredDirection == Direction.Up) {
-            if (above instanceof Animal) {
+    public void senseNeighbors(Creature above, Creature below, Creature left, Creature right)
+    {
+        if (preferredDirection == Direction.Up)
+        {
+            if (above instanceof Animal)
+            {
                 return;
-            } else if (right instanceof Animal) {
+            } else if (right instanceof Animal)
+            {
                 preferredDirection = Direction.Right;
-            } else if (below instanceof Animal) {
+            } else if (below instanceof Animal)
+            {
                 preferredDirection = Direction.Down;
-            } else if (left instanceof Animal) {
+            } else if (left instanceof Animal)
+            {
                 preferredDirection = Direction.Left;
             }
-        } else if (preferredDirection == Direction.Right) {
-            if (right instanceof Animal) {
+        } else if (preferredDirection == Direction.Right)
+        {
+            if (right instanceof Animal)
+            {
                 return;
-            } else if (below instanceof Animal) {
+            } else if (below instanceof Animal)
+            {
                 preferredDirection = Direction.Down;
-            } else if (above instanceof Animal) {
+            } else if (above instanceof Animal)
+            {
                 preferredDirection = Direction.Up;
-            } else if (left instanceof Animal) {
+            } else if (left instanceof Animal)
+            {
                 preferredDirection = Direction.Left;
             }
-        } else if (preferredDirection == Direction.Left) {
-            if (left instanceof Animal) {
+        } else if (preferredDirection == Direction.Left)
+        {
+            if (left instanceof Animal)
+            {
                 return;
             } else if (above instanceof Animal) {
                 preferredDirection = Direction.Up;

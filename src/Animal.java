@@ -1,5 +1,3 @@
-package gameOfLife;
-
 import java.awt.Color;
 import java.util.Random;
 
@@ -60,9 +58,8 @@ public class Animal extends Creature implements Movable, Aggressor
 
     /**
      * Move the animal in a random direction.
-     * @return
      */
-    public int move()
+    public void move()
     {
 
         // Choose a random direction each time move() is called.
@@ -82,6 +79,5 @@ public class Animal extends Creature implements Movable, Aggressor
             default:
                 break;
         }
-        return 0;
     }
 }

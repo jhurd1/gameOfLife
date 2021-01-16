@@ -1,4 +1,3 @@
-package gameOfLife;
 import java.awt.*;
 
 public class Zombie extends Creature implements Movable, Aggressor
@@ -28,26 +27,21 @@ public class Zombie extends Creature implements Movable, Aggressor
     @Override
     public void attack(Creature target)
     {
-        if (target instanceof Plant)
+        if (target instanceof Animal)
         {
-            target.takeDamage(0);
-            //_health++;
-        } else
-            {
             target.takeDamage(10);
-            health++;
-            }
+        }
     }
     /******************************************
      * MOVE
      ****************************************
      * @return*/
-    @Override
+ /*   @Override
     public int move()
     {
         location.x++;
         return 0;
-    }
+    }*/
 
     @Override
     Shape getShape()
@@ -65,5 +59,10 @@ public class Zombie extends Creature implements Movable, Aggressor
     Boolean isAlive()
     {
         return health > 0;
+    }
+
+    @Override
+    public void move() {
+
     }
 }

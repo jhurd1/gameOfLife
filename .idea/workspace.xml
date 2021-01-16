@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55b10753-7fd2-494c-8cc6-f38aa141b963" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Aggressor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Aware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Creature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/CreatureHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Direction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Movable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Plant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Wolf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/World.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameOfLife/Zombie.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n843HNlJsBKdgqQqBZZxv8NnyU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Game" />
+      <module name="gameOfLIfe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Game" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55b10753-7fd2-494c-8cc6-f38aa141b963" name="Default Changelist" comment="" />
+      <created>1610758184386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610758184386</updated>
+    </task>
+    <servers />
+  </component>
+</project>

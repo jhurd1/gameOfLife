@@ -1,5 +1,3 @@
-package gameOfLife;
-
 /**
  *  Aggressors react to creatures they encounter.
  * <p>
@@ -8,12 +6,11 @@ package gameOfLife;
  * @since   2016-12-08
  * @see Creature
  */
-public interface Movable
+public interface Aggressor
 {
 
     /**
-     * Moves the {@link Creature}.
-     * @return
+     * @param target The {@link Creature} we've encounterd.
      */
-    public void move();
+    public void attack(Creature target);
 }

@@ -1,5 +1,3 @@
-package gameOfLife;
-
 /**
  *  Aware creatures can sense others creatures around them.
  * <p>
