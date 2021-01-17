@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55b10753-7fd2-494c-8cc6-f38aa141b963" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wolf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zombie.java" afterDir="false" />
     </list>
@@ -16,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1n843HNlJsBKdgqQqBZZxv8NnyU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,6 +72,18 @@
           <line>47</line>
           <properties field="x" class="java.awt.Point" />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Zombie.java</url>
+          <line>64</line>
+          <properties class="Zombie" method="move">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

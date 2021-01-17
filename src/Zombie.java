@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Random;
 
 public class Zombie extends Creature implements Movable, Aggressor
 {
@@ -7,15 +8,26 @@ public class Zombie extends Creature implements Movable, Aggressor
      *****************************************/
     // Use Java native class
     // or use Creature point?
-    Creature p;
-    Point location;
+    Creature c;
+    Point location = new Point();
     int health;
+    int x, y;
+    Direction d;
+    Random r;
 
     /******************************************
      * CONSTRUCTOR
      *****************************************/
     public Zombie()
     {
+        health = 1;
+        //r = new Random();
+    }
+
+    public Zombie(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
         health = 1;
     }
 

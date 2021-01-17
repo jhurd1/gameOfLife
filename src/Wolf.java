@@ -6,22 +6,27 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor
     /******************************************
      * MEMBERS
      *****************************************/
-    Creature p;
-    Point location;
-    int health;
-    Random r;
     Creature c;
-    CreatureHandler ch;
+    int health;
+    Random r = new Random();
     Direction preferredDirection;
+    int x, y;
 
     /******************************************
      * CONSTRUCTOR
      *****************************************/
+
     public Wolf()
     {
-        /*this.p = p;
-        this.location = location;
-        this.health = health;*/
+        r = new Random();
+        health = 1;
+        preferredDirection = getRandomDirection();
+    }
+
+    public Wolf(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
         r = new Random();
         health = 1;
         preferredDirection = getRandomDirection();
@@ -35,8 +40,8 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor
                 return Direction.Right;
             case 1:
                 return Direction.Left;
-            case 2:
-                return Direction.Up;
+            /*case 2:
+                return Direction.Up;*/
             case 3:
                 return Direction.Down;
             default:
@@ -56,34 +61,19 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor
     }
     /******************************************
      * MOVE
-     ****************************************
-     * @return*/
+     ****************************************/
     @Override
     public void move()
     {
-        /*if (c instanceof Animal)
-        {
-            //senseNeighbors(c.getLocation());
-        } else
-            {*/
-            switch (preferredDirection)
-            {
-                case Right:
-                    location.x++;
-                    break;
-                case Left:
-                    location.x--;
-                    break;
-                case Down:
-                    location.y--;
-                    break;
-                case Up:
+            /*case Up:
                     location.y++;
-                    break;
-                default:
-                    location.y++;
-                    break;
-            }
+                    break;*/
+        switch (preferredDirection) {
+            case Right -> location.x++;
+            case Left -> location.x--;
+            case Down -> location.y--;
+            default -> location.y++;
+        }
         }
 
     @Override
